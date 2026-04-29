@@ -4,3 +4,6 @@ Rasberry
 Graped
 Strawberries
 Blackberries
+Bananas
+Peaches
+Mealon
