@@ -1,3 +1,910 @@
 Welcome to DevOps...
 Linux
 Python
+Jenkins
+bash
+1  sudo apt update && sudo apt upgrade
+    2  sudo apt install -y build-essential curl wget git unzip zip
+    3  sudo reboot
+    4  sudo apt install ./google-chrome-stable_current_amd64.deb
+    5  sudo apt purge firefox
+    6  pwd
+    7  cd Desktop/
+    8  ls
+    9  mkdir installation 
+   10  cd installation/
+   11  nano Essential Admin & Network Tools
+   12  nano EssentialAdminNetwork Tools
+   13  ls
+   14  cd installation/
+   15  ls
+   16  cat EssentialAdminNetwork 
+   17  nano EssentialAdminNetwork 
+   18  bash EssentialAdminNetwork 
+   19  nano enablessh
+   20  bash enablessh 
+   21  systemctl status ssh
+   22  nano installZsh
+   23  bash installZsh 
+   24  nano installZsh 
+   25  bash installZsh 
+   26  git --version 
+   27  git status 
+   28  systemctl status docker
+   29  How to install it step by step guide
+   30  zsh --version
+   31  sudo apt install curl git -y
+   32  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+   33  zsh
+   34  sudo usermod -aG docker $USER newgrp docker
+   35  groups
+   36  id docker
+   37  ls
+   38  docker run hello-world
+   39  docker run -it ubuntu bash
+   40  docker run hello-world
+   41  sudo apt install -y kubectl
+   42  sudo snap install -y kubectl
+   43  sudo apt install -y kubectl
+   44  cd 
+   45  sudo snap install kubectl --classic
+   46  kubectl version --client
+   47  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+   48  sudo install minikube-linux-amd64 /usr/local/bin/minikube
+   49  minikube start --driver=docker
+   50  cd Desktop/installation/
+   51  nano installterraform.sh
+   52  bash installterraform.sh
+   53  terraform -v
+   54  sudo apt install -y ansible
+   55  ansible --version
+   56  sudo apt install -y openjdk-17-jdk
+   57  nano installjenkins
+   58  bash installjenkins
+   59  nano installjenkins
+   60  bash installjenkins
+   61  curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+   62  echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
+   63  sudo apt update
+   64  sudo apt install -y jenkins
+   65  sudo rm -f /etc/apt/sources.list.d/jenkins.list
+   66  sudo rm -f /usr/share/keyrings/jenkins-keyring.asc
+   67  curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+   68  echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/" | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
+   69  sudo apt update
+   70  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 7198F4B714ABFC68
+   71  sudo apt update
+   72  sudo apt install openjdk-17-jdk -y
+   73  sudo apt update
+   74  cd
+   75  curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+   76  echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
+   77  sudo apt update
+   78  sudo apt install -y jenkins
+   79  sudo rm -f /etc/apt/sources.list.d/jenkins.list
+   80  sudo rm -f /usr/share/keyrings/jenkins-keyring.asc
+   81  curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | gpg --dearmor | sudo tee /usr/share/keyrings/jenkins.gpg > /dev/null
+   82  echo "deb [signed-by=/usr/share/keyrings/jenkins.gpg] https://pkg.jenkins.io/debian-stable binary/" | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
+   83  sudo apt update
+   84  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 7198F4B714ABFC68
+   85  sudo apt update
+   86  docker run -d -p 8080:8080 -p 50000:50000 --name jenkins jenkins/jenkins:lts
+   87  docker ps
+   88  docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+   89  sudo apt install -y nodejs npm
+   90  mkdir -p ~/devops-lab/{scripts,projects,docker,k8s,terraform,ansible}
+   91  sudo apt install -y ufw
+   92  sudo ufw allow OpenSSH
+   93  sudo ufw enable
+   94  systemctl status ssh
+   95  cd Desktop/installation/
+   96  nano cheklist
+   97  bash cheklist 
+   98  nano vscodeinstall
+   99  ./ vscodeinstall
+  100  bash vscodeinstall
+  101  sudo rm -f /etc/apt/sources.list.d/jenkins.list
+  102  sudo rm -f /usr/share/keyrings/jenkins*
+  103  sudo apt update
+  104  bash vscodeinstall
+  105  code
+  106  grep -r "packages.microsoft.com/repos/code" /etc/apt/
+  107  sudo rm /etc/apt/sources.list.d/vscode.sources
+  108  sudo apt update
+  109  grep -r "packages.microsoft.com/repos/code" /etc/apt/
+  110  ls
+  111  zsh
+  112  clear
+  113  git config --global user.name "nameissrinivas"
+  114  git config --global user.email "srinivasa_patro@outlook.com"
+  115  git config --global core.editor "vim"
+  116  ssh-keygen -t ed25519 -C "srinivasa_patro@outlook.com"
+  117  cat ~/.ssh/id_ed25519.pub
+  118  sudo apt install -y python3 python3-pip python3-venv
+  119  pip3 install --upgrade pip
+  120  pip3 install requests flask ansible boto3
+  121  sudo apt install python3-venv -y
+  122  python3 -m venv devops-env
+  123  source devops-env/bin/activate
+  124  pip install requests flask ansible boto3
+  125  deactivate
+  126  sudo apt install python3-requests python3-flask -y
+  127  pip3 install requests flask ansible boto3
+  128  cd devops-env/
+  129  source bin/active
+  130  source bin/activate
+  131  ls
+  132  nano active.txt
+  133  bash active.txt
+  134  deactivate 
+  135  bash active.txt
+  136  cat active.txt
+  137  source bin/activate
+  138  pip3 install requests flask ansible boto3
+  139  cd
+  140  deactivate 
+  141  cd Desktop/
+  142  ls
+  143  cd installation/
+  144  nano installdocker
+  145  bash installdocker
+  146  sudo systemctl status docker
+  147  sudo usermod -aG docker $USER
+  148  newgrp docker
+  149  histoty
+  150  \history
+  151  zsh
+  152  ls
+  153  cd devops-
+  154  cd devops-lab/
+  155  ls
+  156  cd 
+  157  ls
+  158  if config
+  159  ifconfig
+  160  ip a
+  161  ip -br a
+  162  ls
+  163  mkdir gitprojects
+  164  ls
+  165  cd gitprojects/
+  166  ls
+  167  git clone https://github.com/nameissriniavs/lesson-end-project.git
+  168  ls
+  169  mkdir firstnewproject
+  170  cd firstnewproject/
+  171  ls
+  172  echo "#create new file for my project" >> README.txt
+  173  cat README.txt 
+  174  git init
+  175  git add .
+  176  git status 
+  177  git commit -m "first commit" README.txt 
+  178  git log
+  179  git config --list
+  180  git remote add origin https://github.com/nameissriniavs/lesson-end-project.git
+  181  ls
+  182  git push -u origin master 
+  183  git config --global user.name "nameissriniavs"
+  184  git remote add origin https://github.com/nameissriniavs/lesson-end-project.git
+  185  git push -u origin master 
+  186  git status 
+  187  ls /home/
+  188  ls /home/srinivas/
+  189  cat /home/srinivas/tokken 
+  190  sudo apt update
+  191  git clone https://github.com/nameissriniavs/Chat-Application.git
+  192  ls
+  193  cd git
+  194  cd gitprojects/
+  195  git clone https://github.com/nameissriniavs/Chat-Application.git
+  196  cd 
+  197  ls
+  198  rm -rf Chat-Application/
+  199  ls
+  200  cd git
+  201  cd gitprojects/
+  202  ls
+  203  cd Chat-Application/
+  204  git remote -v
+  205  git remote add upstream https://github.com/nameissriniavs/Chat-Application.git
+  206  git remote -v
+  207  git push 
+  208  git log
+  209  git status 
+  210  git log
+  211  git push
+  212  ls 
+  213  car mvnw
+  214  cat mvnw
+  215  cd 
+  216  cd gitprojects/
+  217  ls
+  218  cd lesson-end-project/
+  219  ls -lah
+  220  git branch
+  221  cd 
+  222  cd gitprojects/
+  223  ls
+  224  cd Chat-Application/
+  225  ls
+  226  git branch
+  227  cd ..
+  228  cd lesson-end-project/
+  229  ls
+  230  git branch
+  231  git branch dev
+  232  git branch 
+  233  git banch -d dev
+  234  git branch -d dev
+  235  git branch
+  236  git branch dev
+  237  git branch 
+  238  git checkout dev
+  239  vim index.html
+  240  cat index.html 
+  241  git add .
+  242  git commit -m "Added Index.html"
+  243  git status 
+  244  git log
+  245  git checkout main
+  246  git merge dev 
+  247  git push origin main 
+  248  git log
+  249  ls
+  250  touch example.txt
+  251  echo "Hello, this is an example file. Here we can write text." > example.txt 
+  252  cat example.txt 
+  253  git add example.txt 
+  254  git commit -m "Added example file" example.txt 
+  255  git branch
+  256  git branch -b new-branch
+  257  git checkout  -b new-branch
+  258  git branch
+  259  git checkout  -d new-branch
+  260  git branch
+  261  git checkout  -b new-branch
+  262  ls
+  263  git branch
+  264  git checkout new-branch 
+  265  git branch
+  266  touch example.txt
+  267  cat example.txt 
+  268  echo "Hello, this is an example file." > example.txt 
+  269  git status
+  270  git add example.txt 
+  271  git commit -am "changes added to examplefile"  
+  272  git status 
+  273  git log
+  274  git checkout master
+  275  git checkout main 
+  276  ls
+  277  rm example.txt 
+  278  git status 
+  279  git commit -am "Deleted example file"
+  280  git status 
+  281  git log
+  282  git checkout dev 
+  283  git log
+  284  git checkout main 
+  285  git branch
+  286  git merge new-branch 
+  287  ls
+  288  git add example.txt 
+  289  git status 
+  290  git commit -m "Resolved merge conflict"
+  291  git log
+  292  cd ..
+  293  ls
+  294  git clone https://github.com/nameissriniavs/lesson-end-project2.git
+  295  cd lesson-end-project2/
+  296  ls -lah
+  297  cat README.md 
+  298  git branch
+  299  git log
+  300  touch example.txt
+  301  echo "Hello, I am hard coder" > example.txt 
+  302  git add example.txt 
+  303  git commit -m "Modify example file"
+  304  git log --oneline 
+  305  git status
+  306  git log --oneline 
+  307  git branch
+  308  cd ..
+  309  cd lesson-end-project2/
+  310  ls
+  311  git checkout -b feature-branch
+  312  touch testfile.txt
+  313  echo "Hello, this is an example file" > testfile.txt 
+  314  cat testfile.txt 
+  315  git add testfile.txt 
+  316  git status
+  317  git commit -m "Add testfile" testfile.txt 
+  318  git push origin feature-branch 
+  319  git status 
+  320  git log
+  321  ls
+  322  touch testfile.txt
+  323  echo "Hello, I am hard coder" > testfile.txt 
+  324  cat testfile.txt 
+  325  git sta
+  326  git status 
+  327  git add testfile.txt 
+  328  git commit -m "Modify testfile.txt"
+  329  git log --oneline 
+  330  git reset HEAD-1
+  331  git reset HEAD
+  332  git status 
+  333  git log 
+  334  git log --oneline 
+  335  git reset fdc7769
+  336  git log --oneline 
+  337  git branch 
+  338  git checkout main 
+  339  git log --oneline 
+  340  cat example.txt 
+  341  echo "Hello, Welcome to GitHub lab repo " >  example.txt 
+  342  cat example.txt 
+  343  git status 
+  344  git add example.txt 
+  345  git status 
+  346  git commit -m "text changed in example file"
+  347  git log --oneline 
+  348  git reset HEAD
+  349  git log
+  350  git reset HEAD-1
+  351  git log
+  352  git reset 80a7da9ee9c47583ee33f803333ae92177b7a408
+  353  git log --oneline 
+  354  docker ps
+  355  docker start jenkins 
+  356  docker ps
+  357  docker log jenkins
+  358  jenkins-plugin-cli --plugins job-import-plugin:143.v044a_2e819b_27
+  359  sudo jenkins-plugin-cli --plugins job-import-plugin:143.v044a_2e819b_27
+  360  java -jar jenkins-plugin-manager-*.jar --war /your/path/to/jenkins.war --plugin-download-directory /your/path/to/plugins/ --plugin-file /your/path/to/plugins.txt --plugins delivery-pipeline-plugin:1.3.2 deployit-plugin
+  361  docker restart jenkins
+  362  cd
+  363  docker logs jenkins | grep -i import
+  364  docker exec -it jenkins ls /var/jenkins_home/plugins | grep import
+  365  docker restart jenkins
+  366  docker ps
+  367  sudo systemctl docker start jenkins
+  368  sudo docker start jenkins
+  369  docker ps
+  370  sudo docker restart jenkins
+  371  cd /home/srinivas/Desktop/
+  372  ls
+  373  cd installation/
+  374  nano dockerdns
+  375  bash dockerdns 
+  376  dockerps
+  377  docker ps
+  378  docker restart jenkins
+  379  docker ps
+  380  bash dockerdns 
+  381  docke ps
+  382  docker ps
+  383  docker run -d -p 8080:8080 -p 50000:50000 --name jenkins --dns 8.8.8.8 jenkins/jenkins:lts
+  384  docker stop jenkins
+  385  docker rm jenkins
+  386  docker run -d -p 8080:8080 -p 50000:50000 --name jenkins --dns 8.8.8.8 jenkins/jenkins:lts
+  387  docker run -d -p 8080:8080 -p 50000:50000 --name jenkins --dns 8.8.8.8 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
+  388  docker run -d -p 8080:8080 -p 50000:50000 --name jenkins --dns 8.8.8.8 jenkins/jenkins:lts
+  389  docker stop jenkins
+  390  docker rm jenkins
+  391  docker run -d -p 8080:8080 -p 50000:50000 --name jenkins --dns 8.8.8.8 jenkins/jenkins:lts
+  392  docker ps
+  393  /var/jenkins_home/secrets/initialAdminPassword
+  394  docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+  395  docker ps
+  396  docker start jenkins
+  397  docker ps
+  398  docker restart jenkins
+  399  docker ps
+  400  docker restart jenkins
+  401  wget https://updates.jenkins-ci.org/download/plugins/artifactory/4.0.6/artifactory.hpi
+  402  docker cp artifactory.hpi jenkins:/var/jenkins_home/plugins/
+  403  docker exec -it jenkins bash
+  404  cd /var/jenkins_home/plugins
+  405  mv artifactory.hpi artifactory.jpi
+  406  exit
+  407  docker restart jenkins
+  408  docker ps
+  409  docker ps 
+  410  docker restart jenkins
+  411  docker ps -a
+  412  docker container prune
+  413  docker ps
+  414  docker /var/lib
+  415  cd docker /var/lib/
+  416  cd docker/var/lib/
+  417  cd /var/lib/jenkins
+  418  cd /var/jenkins_home/workspace
+  419  docker
+  420  docker exec -it jenkins bash
+  421  ls
+  422  mv tokken tocken
+  423  ls
+  424  maven
+  425  where is jenkins
+  426  whereis jenkins
+  427  docker ps
+  428  docker start jenkins
+  429  docker ps
+  430  java --version
+  431  mvn --version
+  432  docker exec -u root -it jenkins bash
+  433  docker update --restart=unless-stopped jenkins
+  434  docker inspect jenkins | grep -i restart
+  435  docker inspect jenkins | grep -A 3 RestartPolicy
+  436  sudo reboot
+  437  docker ps
+  438  docker exec -u root -it jenkins bash
+  439  docker exec -u
+  440  docker ps
+  441  jenkins
+  442  docker exec -u root
+  443  docker exec -u root -it jenkins bash
+  444  ls
+  445  sudo apt update && sudo apt upgrade
+  446  docker ps
+  447  docker exec -u root -it jenkins bash
+  448  git --version 
+  449  ls
+  450  cd gitprojects/
+  451  ls
+  452  cd Chat-Application/
+  453  ls
+  454  git status 
+  455  git log --oneline
+  456  git log
+  457  cd ..
+  458  mkdir devops-git-project
+  459  ls
+  460  cd devops-git-project/
+  461  ls
+  462  git init
+  463  echo "server_port=8080" > app.conf
+  464  cat app.conf 
+  465  echo "timeout=30" >> app.log
+  466  cat app.conf 
+  467  echo "timeout=30" >> app.conf
+  468  cat app.
+  469  ls
+  470  rm app.log 
+  471  ls
+  472  cat app.conf 
+  473  git add app.conf 
+  474  git status 
+  475  git commit -m "Innitial config" app.conf 
+  476  git status 
+  477  git branch
+  478  git config --list 
+  479  git status 
+  480  git remote add origin https://github.com/nameissriniavs/devops-git-project.git
+  481  git branch
+  482  git branch -M main
+  483  git push -u origin main
+  484  git branch
+  485  git remote add origin https://github.com/nameissriniavs/devops-git-project.git
+  486  git push -u origin main
+  487  cd ..
+  488  ls
+  489  rm -rf devops-git-project/
+  490  ls
+  491  mkdir devops-git-project
+  492  cd devops-git-project/
+  493  echo "server_port=8080" > app.conf
+  494  echo "timeout=30" >> app.conf
+  495  cat app.conf 
+  496  git status 
+  497  git init
+  498  git status 
+  499  git add .
+  500  git status 
+  501  git add .
+  502  git commit -m "Innitial config" 
+  503  git status 
+  504  git branch
+  505  git remote add origin https://github.com/nameissriniavs/devops-git-project.git
+  506  git branch
+  507  git branch -M main
+  508  git push -u origin main
+  509  cd ..
+  510  rm -rf devops-git-project/
+  511  ls
+  512  mkdir devops-git-project
+  513  cd devops-git-project/
+  514  cd ..
+  515  rm -rf devops-git-project/
+  516  ls
+  517  git clone https://github.com/nameissriniavs/devops-git-project.git
+  518  ls
+  519  cd devops-git-project/
+  520  ls -lah
+  521  mkdir config scripts
+  522  touch config/app.conf
+  523  touch scripts/deploy.sh
+  524  tree
+  525  ls
+  526  tree config/
+  527  ls
+  528  nano config/app.conf 
+  529  cat config/app.conf 
+  530  nano scripts/deploy.sh 
+  531  cat scripts/deploy.sh 
+  532  git add .
+  533  git status 
+  534  git branch 
+  535  git commit -m "Innitial project setup with config and deploy script"
+  536  git status 
+  537  git push
+  538  git log --oneline
+  539  git checkout -b feature/update-timeout
+  540  git branch
+  541  ls -lah
+  542  nano config/app.conf 
+  543  git add .
+  544  git commit -m "Updated timeout to 60"
+  545  git push origin feature/update-timeout 
+  546  git branch
+  547  git checkout main 
+  548  git branch -d feature/update-timeout 
+  549  git branch -D feature/update-timeout 
+  550  git branch
+  551  git pull origin main
+  552  ls
+  553  cat config/app.conf 
+  554  git fetch
+  555  git diff origin/main
+  556  git pull
+  557  git checkout -b feature/bad-change
+  558  git branch
+  559  ls
+  560  nano config/app.conf 
+  561  git status 
+  562  git add .
+  563  git commit "port number update"
+  564  git commit -m "port number update"
+  565  git push origin feature/bad-change 
+  566  git fetch 
+  567  git diff origin/main
+  568  cat config/app.conf 
+  569  git branch 
+  570  git diff main origin/main
+  571  git log --oneline
+  572  git show d120902
+  573  git revert d120902
+  574  git push
+  575  git log --oneline
+  576  git diff
+  577  cat config/app.conf 
+  578  cd ..
+  579  ls
+  580  git clone https://github.com/nameissriniavs/config-management-lab.git 
+  581  cd config-management-lab/
+  582  ls
+  583  ls -ah
+  584  ls -al
+  585  mkdir config
+  586  nano config/app.conf
+  587  cat config/app.conf 
+  588  git branch
+  589  git status 
+  590  git add .
+  591  git commit -m "Innitial config setup"
+  592  git push
+  593  git checkout -b feature/update-timeout
+  594  nano config/app.conf 
+  595  git add .
+  596  git checkout -m "Updated timeout to 60"
+  597  git push origin feature/update-timeout 
+  598  git status 
+  599  git add .
+  600  git status 
+  601  git commit -m "Updated timeout to 60"
+  602  git status 
+  603  git push origin feature/update-timeout 
+  604  git checkout main
+  605  git pull
+  606  git log --oneline
+  607  git diff HEAD
+  608  git diff HEAD~1
+  609  cat config/app.conf 
+  610  git diff HEAD~1
+  611  git checkout -b feature/bad-config
+  612  nano config/app.conf 
+  613  git status 
+  614  git add .
+  615  git status 
+  616  git commit -m "Port number changed to 9999"
+  617  git status 
+  618  git branch 
+  619  git push origin feature/bad-config 
+  620  git branch
+  621  git fetch 
+  622  git log --oneline
+  623  git revert d7f18e3
+  624  git push
+  625  git status 
+  626  cat config/app.conf 
+  627  ls
+  628  tree config/
+  629  cat config/app.conf 
+  630  mkdir scripts
+  631  nano scripts/deploy.sh
+  632  cat scripts/deploy.sh 
+  633  git status 
+  634  git add .
+  635  git commit -m "Added deployment script"
+  636  cd scripts/
+  637  nano scripts/deploy.sh
+  638  nano deploy.sh 
+  639  ls
+  640  cd ..
+  641  tree scripts/
+  642  cd scripts/
+  643  ls
+  644  ./deploy.sh
+  645  chmod +x deploy.sh 
+  646  cd ..
+  647  git status 
+  648  git add .
+  649  git commit -m "added deploy.sh in to scripts"
+  650  git push
+  651  git status 
+  652  ./scripts/deploy.sh
+  653  git checkout -b feature/change-env
+  654  nano config/app.conf 
+  655  git add .
+  656  git commit -m "Changed environment to prod"
+  657  git push origin feature/change-env 
+  658  git checkout -b feature/bad-deploy
+  659  nano config/app.conf 
+  660  git add .
+  661  git commit -m "port number inva"
+  662  git push origin feature/bad-deploy 
+  663  ./scripts/deploy.sh 
+  664  git log --oneline 
+  665  git revert ffc1351
+  666  git push
+  667  git pull
+  668  ./scripts/deploy.sh 
+  669  chmod +x scripts/deploy.sh 
+  670  ./scripts/deploy.sh 
+  671  git branch 
+  672  git rev-parse origin/master
+  673  git branch -r
+  674  sudo apt update && sudo apt upgrade
+  675  systemctl
+  676  ansible
+  677  ansible --version
+  678  whatis ansible
+  679  docker ps
+  680  docker ps | grep 8080
+  681  ls
+  682  cat tocken 
+  683  cd gitprojects/
+  684  ls
+  685  git status --list
+  686  git stage --list
+  687  cd config-management-lab/
+  688  cd ..
+  689  git config --list 
+  690  ls
+  691  mkdir simlilearndemo2026
+  692  ls
+  693  cd simlilearndemo2026/
+  694  ls
+  695  ls -al
+  696  pwd
+  697  cd ~
+  698  pwd
+  699  cd gitprojects/simlilearndemo2026/
+  700  ls
+  701  pwd
+  702  git init
+  703  ls -lah
+  704  cd
+  705  exit
+  706  cd gitprojects/simlilearndemo2026/
+  707  ls -alh
+  708  cd .git/
+  709  ls
+  710  cat config 
+  711  cat description 
+  712  cd ..
+  713  tree .git/
+  714  cat .git/HEAD 
+  715  git branch
+  716  git branch 
+  717  git branch
+  718  git config --list
+  719  ls -lah
+  720  cat .git/HEAD 
+  721  git --version 
+  722  git install
+  723  sudo apt git install 
+  724  git --version 
+  725  git config --get inti.defaultBranch
+  726  git config --global init.defaultBranch main
+  727  git config --get inti.defaultBranch
+  728  git config --get init.defaultBranch
+  729  git init
+  730  git branch
+  731  cat .git/HEAD 
+  732  CD 
+  733  cd ..
+  734  mkdir testrepo
+  735  git init
+  736  cat .git/HEAD 
+  737  git branch 
+  738  sudo reboot
+  739  cd gitprojects/
+  740  cd simlilearndemo2026/
+  741  git branch 
+  742  git init
+  743  echo "Hello DevOps" > demo.txt
+  744  ls
+  745  git status 
+  746  git branch 
+  747  git add demo.txt 
+  748  git branch
+  749  git branch -b feature/demo
+  750  git commit -m "Inntial commit" demo.txt 
+  751  git branch
+  752  ls
+  753  git checkout -b feature/demo
+  754  git branch
+  755  cd gitprojects/
+  756  cd simlilearndemo2026/
+  757  ls
+  758  git config --global 
+  759  git config --list --show-origin 
+  760  cat /home/srinivas/.gitconfig 
+  761  hostnamectl
+  762  free -m
+  763  free -mh
+  764  df -h /
+  765  systemctl list-units --state=running
+  766  systemctl list-units
+  767  systemctl list-units --type=service --state=running
+  768  ls
+  769  vi demo.txt 
+  770  bash demo.txt 
+  771  git status 
+  772  git add .
+  773  git commit -m "bash script added"
+  774  git status 
+  775  git branch 
+  776  git checkout master 
+  777  ls
+  778  cat demo.txt 
+  779  git merge feature/demo 
+  780  cat demo.txt 
+  781  git push
+  782  git log 
+  783  git log --oneline 
+  784  git diff master origin/master
+  785  git pull 
+  786  git status 
+  787  cd ..
+  788  cd simlilearndemo2026/
+  789  ls
+  790  git branch
+  791  cd ..
+  792  rm -rf simlilearndemo2026/
+  793  ls
+  794  rm -rf firstnewproject/
+  795  ls
+  796  rm -rf lesson-end-project
+  797  ls
+  798  rm -rf testrepo/
+  799  ls
+  800  rm -rf lesson-end-project2/
+  801  ls
+  802  cd
+  803  ls
+  804  cat tocken 
+  805  sudo apt update && sudo apt upgrade
+  806  docker ps
+  807  docker exec -u root -it jenkins bash
+  808  code
+  809  pycharm
+  810  Ansible
+  811  which ansible
+  812  which terraform 
+  813  terraform
+  814  sudo apt update && sudo apt upgrade
+  815  aws cli
+  816  sudo apt  install awscli   # version 2.14.6-1
+  817  sudo apt  install awscli
+  818  nano test
+  819  ssh@50.17.74.147
+  820  ls Downloads/
+  821  ls -a
+  822  ls -ltr
+  823  ls -ltr Downloads/
+  824  ssh -i Ansiblelabkeypair.pem ubuntu@50.17.74.147
+  825  ssh -i Ansiblelabkeypair.pem devops@50.17.74.147
+  826  sudo snap install notepad-plus-plus
+  827  ls
+  828  pwd
+  829  whoami
+  830  ls /home/srinivas/Downloads/
+  831  zip
+  832  cd Downloads/
+  833  ls
+  834  unzip jenkins-job-chaining-bank-ci-nameissriniavs.zip -d /home/srinivas/Downloads/
+  835  cd ..
+  836  ls
+  837  cd Desktop/
+  838  ls
+  839  cd /home/srinivas/Downloads/
+  840  ls
+  841  mv jenkins-job-chaining-bank-ci-nameissriniavs /home/srinivas/Desktop/
+  842  ls /home/srinivas/Desktop/
+  843  ls -lt
+  844  cd 
+  845  cd Desktop/
+  846  cd jenkins-job-chaining-bank-ci-nameissriniavs/
+  847  ls
+  848  cd scripts/
+  849  ls
+  850  cat bootstrap-ubuntu24.sh 
+  851  ls
+  852  cat install-jenkins.sh 
+  853  cd ..
+  854  ls
+  855  cd app
+  856  ls
+  857  cat README.md 
+  858  ls
+  859  cd ../..
+  860  ls
+  861  sudo apt update && sudo apt upgrade
+  862  sudo apt install zip unzip
+  863  sudo apt update && sudo apt upgrade
+  864  git clone https://github.com/nameissriniavs/working-with-branches.git
+  865  ls
+  866  cd working-with-branches/
+  867  ls
+  868  cat README.md 
+  869  git log
+  870  git remote -v
+  871  code
+  872  git status 
+  873  git add README.md 
+  874  git status 
+  875  git commit -m "Update readme.md file"
+  876  git status 
+  877  git add README.md 
+  878  git commit -m "Update readme.md file cleaned"
+  879  git log
+  880  touch test.txt
+  881  git status 
+  882  git add test.txt 
+  883  git commit -m "added new file"
+  884  git ststu
+  885  git status 
+  886  git add test.txt 
+  887  git commit -m "added list into file"
+  888  git status
+  889  history
+  890  git push
+  891  git remote -v
+  892  git push
+  893  git config --list
+  894  git status 
+  895  git push
+  896  ls
+  897  git status 
+  898  git branch
+  899  git log
+  900  git branch feature-main
+  901  git branch
+  902  git checkout feature-main 
+  903  git branch
+  904  ls
+  905  history
