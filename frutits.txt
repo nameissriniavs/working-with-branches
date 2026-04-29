@@ -2,3 +2,5 @@ Pear
 Apple
 Rasberry
 Graped
+Strawberries
+Blackberries
